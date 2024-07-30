@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    p {
+        font-size: clamp(0.5rem, 0.16rem + 1.49vw, 1.5rem);
+        line-height: clamp(0.438rem, 0.063rem + 1.64vw, 1.5rem);
+        color: black;
+    }
+}
+
+h1 {
+    color: black;
+    font-size: clamp(2.188rem, 2.081rem + 0.47vw, 2.5rem);
+    margin-top: 0.3rem;
+    margin-bottom: 0.8rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.a {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.x {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 25vw);
+    gap: clamp(0.125rem, -0.095rem + 1.1vw, 0.938rem);
+}
+
+.r {
+    overflow: hidden;
+}
+
+.item2 {
+    grid-column: span 2;
+}
+
+.item4 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    grid-column: 1 / 5;
+    background: url(https://avatars.mds.yandex.net/i?id=6a382f4f7ffd8b40e8787374472f79b33b36c44e56bc17fd-4397183-images-thumbs&n=13)0 0/30% no-repeat,
+        url(https://avatars.mds.yandex.net/i?id=b0573aa775abc2b50fec7ca64bca14885219dee9-10703010-images-thumbs&n=13)bottom left/30% no-repeat,
+        url(https://avatars.mds.yandex.net/i?id=577192b4d5d7bf2aaf2e50537c871285-5483446-images-thumbs&n=13)45% 0 /10% no-repeat,
+        url(https://avatars.mds.yandex.net/i?id=5f5df119eb2fb8c2f223b1e87c06a274aa334960-4120554-images-thumbs&n=13) 45% 100% /18% no-repeat,
+        url(https://i.pinimg.com/236x/5d/eb/f9/5debf9c9205aa3032f16ad645bf89517.jpg) no-repeat 100%/40%;
+}
+
+.item5 {
+    color: white;
+    text-align: center;
+    grid-column: 1/5;
+    background-color: rgb(0, 0, 0);
+}
+
+h2 {
+    font-size: clamp(0.438rem, 0.319rem + 1.57vw, 1.5rem);
+    text-shadow: 0px 20px 20px white;
+}
+
+
+.p {
+    mix-blend-mode: difference;
+    width: 5%;
+    height: 20%;
+    background-color: white;
+    animation: ss 10s ease-in-out infinite;
+    position: relative;
+}
+
+@keyframes ss {
+    0% {
+        top: -10%;
+        left: 0;
+    }
+
+    25% {
+        top: -10%;
+        left: 95%;
+    }
+    
+    50% {
+        top: 80%;
+        left: 95%;
+    }
+    
+    75% {
+        top: 75%;
+        left: 0%;
+    }
+
+    100% {
+        top: -10%;
+        left: 0;
+    }
+}
+
+
+
+@media (max-width: 670px) {
+    header {
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 250px) {
+
+    h1 {
+        font-size: 15px;
+    }
+
+    header {
+        p {
+            font-size: 7px;
+        }
+    }
+}
